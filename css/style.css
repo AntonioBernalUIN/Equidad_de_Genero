@@ -68,6 +68,9 @@ header h1,
 
 .img-conferencia {
     width: 100%;
+    position: relative;
+    top: 40px;
+    left: 0;
 }
 
 .main {
