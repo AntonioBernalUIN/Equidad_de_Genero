@@ -1,0 +1,367 @@
+*,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 1px 10px 2px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.img-logo {
+    width: 250px;
+}
+
+header h1,
+.nav a {
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.nav {
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-conferencia {
+    width: 100%;
+}
+
+.main {
+    position: relative;
+
+    width: max(300px, 100%);
+    height: 700px;
+    border: 1px solid black;
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(5px);
+}
+
+.info {
+    filter: blur(0px);
+    position: absolute;
+    margin-top: -740PX;
+    padding: 30px;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about,
+.image {
+    position: relative;
+    padding: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.about h2,
+.image h2 {
+    width: 100%;
+}
+
+.about button {
+    padding: 10px;
+    border-radius: 20px;
+    border: 4px solid;
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    animation: botonabout 10s infinite;
+}
+
+.about button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes botonabout {
+    0% {
+        border-color: hsl(0deg, 100%, 50%);
+    }
+
+    25% {
+        border-color: hsl(90deg, 100%, 50%);
+    }
+
+    50% {
+        border-color: hsl(180deg, 100%, 50%);
+    }
+
+    75% {
+        border-color: hsl(270deg, 100%, 50%);
+    }
+
+    100% {
+        border-color: hsl(360deg, 100%, 50%);
+    }
+}
+
+
+.image-info {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-info section {
+    box-shadow: 0px 5px 10px 2px;
+    padding: 15px;
+
+}
+
+.image-info section img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+
+.image-info section h2 {
+    font-size: 20px;
+    height: 100px;
+}
+
+.image-info section p {
+    height: 220px;
+}
+
+.image-info section a {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff008c;
+    color: #fff;
+    padding: 10px;
+}
+
+.image-info2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    text-align: center;
+
+}
+
+.image-info2 h2 {
+    font-size: 18px;
+}
+
+
+/* -------------------------glosario------------- */
+.buscador {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buscador input {
+    width: 80%;
+}
+
+.title-glosario {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 45px;
+    text-align: center;
+}
+
+.main-glosario {
+    padding: 20px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 15px;
+}
+
+.main-glosario article {
+    padding: 25px 20px;
+    box-shadow: 0px 1px 5px 1px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.main-glosario article h2 {
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/* menu-------------------- */
+.menu {
+    height: 100vh;
+    width: 80%;
+    background-image: url(../img/m.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    padding: 0;
+    z-index: 5;
+    animation: menuresponce 1s ease-in;
+}
+
+.nav-menu {
+    align-items: normal;
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+/* -----------------------------------------responce---------------------- */
+@media (max-width: 970px) {
+
+    header h1,
+    .infoheader {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 550px) {
+
+
+    .icon {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .infoheader {
+        display: none;
+
+    }
+
+    .nav {
+        flex-direction: column;
+        position: relative;
+        left: 0;
+    }
+
+    .main,
+    .info {
+        height: 750px;
+    }
+
+    .main {
+        width: 100%;
+        background-image: url(../img/fond-cel.jpeg);
+        background-size: contain;
+    }
+
+    .info h2 {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .info p {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .image-info2 img {
+        width: 100%;
+    }
+
+    .icon i {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 300px) {
+    .info p {
+        font-size: 12px;
+    }
+}
+
+@keyframes menuresponce {
+    0% {
+        transform: translateX(-75%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
